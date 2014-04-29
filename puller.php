@@ -1,6 +1,7 @@
 <?php `sudo git pull`;
 
 $response = 'Pulled!';
-die(jsonResponse($response));
+header('Content-Type: application/json');
+echo json_encode($response);
 
 ?>
